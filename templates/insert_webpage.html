@@ -9,9 +9,20 @@
 <body>
     <center>
         <h1 style="color:red">this is the data inserted into webpage....</h1>
-        {% for j in webpage %}
-            <h1>{{ j.author}}</h1>
-        {% endfor %}
+        <table border="2px">
+            <tr>
+                <th>topic_name</th>
+                <th>author</th>
+                <th>date</th>
+            </tr>
+        {% for i in webpage %}
+            <tr>
+                <th>{{i.topic_name}}</th>
+                <th>{{i.name}}</th>
+                <th>{{i.urls}}</th>
+            </tr>
+      
+         {% endfor %}
         
     </center>
     

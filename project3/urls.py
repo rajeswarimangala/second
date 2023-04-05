@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('insert_topic/',insert_topic,name='insert_topic'),
     path('insert_webpage/',insert_webpage,name='insert_webpage'),
-    path('insert_access/',insert_access,name='insert_access')
+    path('insert_access/',insert_access,name='insert_access'),
 ]

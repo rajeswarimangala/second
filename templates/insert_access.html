@@ -8,11 +8,23 @@
 </head>
 <body>
     <center>
-    <h1>this is inserting data into the accessrecords---</h1>
-    {% for i in access %}
-     <h1>{{ i.author }}</h1>
-     {% endfor %}
-
+        <h1 style="color:red">this is the data inserted into webpage....</h1>
+        <table border="2px">
+            <tr>
+                <th>name</th>
+                <th>author</th>
+                <th>date</th>
+            </tr>
+        {% for i in access %}
+            <tr>
+                <th>{{i.name}}</th>
+                <th>{{i.author}}</th>
+                <th>{{i.date}}</th>
+            </tr>
+      
+         {% endfor %}
+        
+    </table>
     </center>
 </body>
 </html>

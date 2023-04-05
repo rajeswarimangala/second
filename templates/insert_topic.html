@@ -9,9 +9,18 @@
 <body>
     <center>
         <h1> this is insertion into topic table........</h1>
+        <table border="2px">
+            <tr>
+                <th>topic_name</th>
+              
+            </tr>
         {% for i in topic %}
-        <h1>{{ i.topic_name }}</h1>
-        {% endfor %}
+            <tr>
+                <th>{{i.topic_name}}</th>
+              
+            </tr>
+      
+         {% endfor %}
     </center>
 </body>
 </html>
